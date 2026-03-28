@@ -16,7 +16,13 @@ export class FormularioComponent {
   constructor(private fb: FormBuilder) {
     this.formulario = this.fb.group({
       nombre: ['', Validators.required],
-      correo: ['', [Validators.required, Validators.email]]
+      tipoId: [''],
+      estadoCivil: [''],
+      numeroIdentificacion: [''],
+      fechaNacimiento: [''],
+      aceptaTerminos: [''],
+      correo: ['', [Validators.required, Validators.email],
+      ]
     });
   }
 

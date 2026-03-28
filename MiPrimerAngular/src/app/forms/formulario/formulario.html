@@ -1,11 +1,52 @@
 <form [formGroup]="formulario" (ngSubmit)="enviar()">
-
-  <label>Nombre</label>
+<br>
+<div>
+  <label>Nombre: </label>
   <input type="text" formControlName="nombre">
-
-  <label>Correo</label>
+</div>
+<br>
+<div>
+  <label for="tipoId">Elige un tipo de identificacion: </label>
+  <select id="tipoId" formControlName="tipoId">
+    <option value="C.C">C.C</option>
+    <option value="T.I">T.I</option>
+    <option value="C.E">C.E</option>
+  </select>
+</div>
+<br>
+<div>
+  <label>Número de identificación: </label>
+  <input type="text" formControlName="numeroIdentificacion">
+</div>
+<br>
+<div>
+  <label>Fecha de nacimiento: </label>
+  <input type="date" formControlName="fechaNacimiento">
+</div>
+<br>
+<div>
+  <label for="estadoCivil">Estado Civil: </label>
+  <select id="estadoCivil" formControlName="estadoCivil">
+    <option value="soltero">Soltero</option>
+    <option value="casado">Casado</option>
+    <option value="viudo">Viudo</option>
+  </select>
+</div>
+<br>
+<div>
+  <label>Correo: </label>
   <input type="email" formControlName="correo">
+</div>
+<br>
+<div>
+    <label>
+        <input type="checkbox" formControlName="aceptaTerminos"> Acepto los términos y condiciones
+    </label>
 
-  <button type="submit">Enviar</button>
+</div>
+<br>
+<div>
+  <button type="submit">Enviar: </button>
+</div>
 
 </form>
