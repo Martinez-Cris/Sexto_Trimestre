@@ -1,1 +1,40 @@
-<p>inicio works!</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hola, este es mi primer proyecto</h1>
+  <h2> {{Bienvenidos}} , ahora estas en el programa de ADSO</h2>
+  
+  
+  <ul>
+    <li>Cuadernos</li>
+    <li>Gorras</li>
+    <li>Gafas</li>
+  </ul>
+
+
+  <h2>Antigua sintaxis</h2>
+  <ul>
+    <li *ngFor="let objeto of Estudiantes">  {{objeto}} </li>
+  </ul>
+
+  <br>
+  <h2>Nueva sintaxis</h2>
+  <ul>
+    @for (objeto of Estudiantes; track objeto){
+      <li>{{objeto}}</li>
+    } 
+  </ul>
+
+  <hr>
+
+  <h2>Formulario: </h2>
+
+
+
+</body>
+</html>

@@ -10,12 +10,6 @@ import { CommonModule } from '@angular/common';
 })
 
 export class App {
-  Bienvenidos = 'Hola Cristian, eres un Crack';
-
-  Estudiantes = [
-    'Cuadernos',
-    'Gorras',
-    'Gafas'
-  ]
+  
   
 }
